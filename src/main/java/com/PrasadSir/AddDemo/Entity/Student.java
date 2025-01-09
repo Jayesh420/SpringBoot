@@ -11,10 +11,10 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column
+    @Column(nullable = false)// It means the database column should not accept NULL values.
     private String name;
 
-    @Column
+    @Column(nullable = false)
     private String schoolName;
 
     public int getId() {
